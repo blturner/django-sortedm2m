@@ -1,8 +1,41 @@
-ul.sortedm2m {
-    padding-left:3em !important;
-    margin-left:15em !important;
+.ui-sortable, .ui-droppable {
+    float: left;
+    width: 248px;
+    min-height: 150px;
+    max-height: 300px;
+    background: #f1f1f1;
+    border: dashed 1px #ccc;
+    overflow: scroll;
 }
 
-ul.sortedm2m + .add-another {
-    margin-left:18em !important;
+form .aligned .ui-droppable,
+form .aligned .ui-sortable {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+}
+
+.ui-droppable li,
+.ui-sortable li {
+    padding: 5px 7px;
+    background: white url(/static/admin/img/nav-bg.gif) 0 100% repeat-x;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 5px 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.ui-draggable,
+.ui-sortable li { cursor: move; }
+
+.ui-sortable li .deletelink { display: none; float: right; }
+.ui-sortable li:hover .deletelink { display: block; }
+
+.selector-available {
+    margin-right: 30px;
+}
+
+.selector-available h2, .selector-chosen h2 {
+    margin-bottom: 5px;
 }
